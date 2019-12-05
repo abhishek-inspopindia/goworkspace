@@ -11,14 +11,14 @@ var m = make(map[int]string)
 
 // FizzBuzz - uses Channels and Maps to create FizzBuzz
 func FizzBuzz(fizz, buzz int) map[int]string {
-	go CreateFizzBuzz(fizz, buzz, c)
-	MapFizzBuzz(m, c)
+	go createFizzBuzz(fizz, buzz, c)
+	mapFizzBuzz(m, c)
 
 	return m
 }
 
 // CreateFizzBuzz - creates FizzBuzz and insert values into the Channel
-func CreateFizzBuzz(fizz, buzz int, c chan string) {
+func createFizzBuzz(fizz, buzz int, c chan string) {
 	fizzbuzz := fizz * buzz
 	for i := 1; i <= 100; i++ {
 		if i%fizzbuzz == 0 {
@@ -35,7 +35,7 @@ func CreateFizzBuzz(fizz, buzz int, c chan string) {
 }
 
 // MapFizzBuzz - maps the channel values to the global map variable
-func MapFizzBuzz(m map[int]string, c chan string) {
+func mapFizzBuzz(m map[int]string, c chan string) {
 	cnt := 1
 	for n := range c {
 		m[cnt] = n
