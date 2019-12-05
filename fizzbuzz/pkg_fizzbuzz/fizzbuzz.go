@@ -1,21 +1,9 @@
-// Package main contains the modules to create a FizzBuzz
-package main
+// Package fizzbuzz contains the modules to create a FizzBuzz
+package fizzbuzz
 
 import (
-	"fmt"
 	"strconv"
 )
-
-func main() {
-	fizz := 3
-	buzz := 5
-
-	m := make(map[int]string)
-
-	FizzBuzz(fizz, buzz, m)
-
-	fmt.Println(m)
-}
 
 // FizzBuzz - generate Key-Value pairs of the Map
 func FizzBuzz(fizz, buzz int, m map[int]string) {
