@@ -1,4 +1,4 @@
-// Package Main
+// Package main contains the modules to create a FizzBuzz
 package main
 
 import (
