@@ -1,16 +1,15 @@
-// Package fizzbuzzchan contains the modules to create a FizzBuzz using Channels and Map
+// Package fizzbuzzchan contains the modules to create a FizzBuzz using Channel and Map
 package fizzbuzzchan
 
 import (
 	"strconv"
 )
 
-// global variable declaration
-var c = make(chan string)
-var m = make(map[int]string)
-
 // FizzBuzz - uses Channels and Maps to create FizzBuzz
 func FizzBuzz(fizz, buzz int) map[int]string {
+	var c = make(chan string)
+	var m = make(map[int]string)
+
 	go createFizzBuzz(fizz, buzz, c)
 	mapFizzBuzz(m, c)
 
