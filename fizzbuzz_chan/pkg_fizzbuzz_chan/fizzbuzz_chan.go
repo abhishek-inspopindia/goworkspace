@@ -7,6 +7,7 @@ import (
 
 // FizzBuzz - uses Channels and Maps to create FizzBuzz
 func FizzBuzz(fizz, buzz int) map[int]string {
+	//runtime.GOMAXPROCS(8)
 	var c = make(chan string)
 	var m = make(map[int]string)
 
