@@ -11,7 +11,7 @@ func main() {
 	fizz := 3
 	buzz := 5
 
-	fizzbuzzchan.FizzBuzz(fizz, buzz)
+	m := fizzbuzzchan.FizzBuzz(fizz, buzz)
 
 	fmt.Println(m)
 }
