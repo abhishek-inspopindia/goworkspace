@@ -1,8 +1,9 @@
-// Package main contains the modules to create a FizzBuzz
 package main
 
 import (
 	"fmt"
+
+	fizzbuzz "github.com/abhishek-inspopindia/goworkspace/fizzbuzz/pkg_fizzbuzz"
 )
 
 func main() {
@@ -11,7 +12,7 @@ func main() {
 
 	m := make(map[int]string)
 
-	FizzBuzz(fizz, buzz, m)
+	fizzbuzz.FizzBuzz(fizz, buzz, m)
 
 	fmt.Println(m)
 }
