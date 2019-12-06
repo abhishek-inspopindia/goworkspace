@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	shapes "github.com/abhishek-inspopindia/goworkspace/shapes"
+	shapes "github.com/abhishek-inspopindia/goworkspace/pkg/shapes"
 )
 
 func main() {

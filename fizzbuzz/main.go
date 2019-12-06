@@ -1,15 +1,12 @@
-// Package main contains the modules to create a FizzBuzz
 package main
 
 import (
 	"fmt"
+
+	"github.com/abhishek-inspopindia/goworkspace/pkg/fizzbuzz"
 )
 
 func main() {
-	fizzbuzz()
-}
-
-func fizzbuzz() {
 	fizz := 3
 	buzz := 5
 
