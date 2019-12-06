@@ -3,11 +3,13 @@ package main
 
 import (
 	"fmt"
-
-	fizzbuzz "github.com/abhishek-inspopindia/goworkspace/fizzbuzz/fizzbuzz.go"
 )
 
 func main() {
+	fizzbuzz()
+}
+
+func fizzbuzz() {
 	fizz := 3
 	buzz := 5
 
