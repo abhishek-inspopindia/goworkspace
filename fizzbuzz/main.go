@@ -1,10 +1,10 @@
-// Package main contains the modules to create a FizzBuzz using Map
+// Package main contains the modules to create a FizzBuzz
 package main
 
 import (
 	"fmt"
 
-	fizzbuzz "github.com/abhishek-inspopindia/goworkspace/fizzbuzz"
+	fizzbuzz "github.com/abhishek-inspopindia/goworkspace/fizzbuzz/fizzbuzz.go"
 )
 
 func main() {
