@@ -3,8 +3,6 @@ package shapes
 import (
 	"fmt"
 	"testing"
-
-	"github.com/abhishek-inspopindia/goworkspace/shapes"
 )
 
 // Reference: https://dev.to/quii/learn-go-by-writing-tests-structs-methods-interfaces--table-driven-tests-1p01
@@ -94,22 +92,36 @@ func BenchmarkPerimeter(b *testing.B) {
 	}
 }
 
-func ExampleArea() {
-	s := shapes.Square{10}
-	c := shapes.Circle{10}
-	fmt.Println(s.Area())
-	fmt.Println(c.Area())
+func ExampleShape_Area() {
+	areaExamples := []struct {
+		name  string
+		shape Shape
+	}{
+		{name: "Square", shape: Square{Side: 10}},
+		{name: "Circle", shape: Circle{Radius: 10}},
+	}
+
+	for _, ee := range areaExamples {
+		fmt.Println(ee.shape.Area())
+	}
 	// Output:
-	// 40.0
-	// 62.83185307179586
+	// 100
+	// 314.1592653589793
 }
 
-func ExamplePerimeter() {
-	s := shapes.Square{10}
-	c := shapes.Circle{10}
-	fmt.Println(s.Perimeter())
-	fmt.Println(c.Perimeter())
+func ExampleShape_Perimeter() {
+	perimeterExamples := []struct {
+		name  string
+		shape Shape
+	}{
+		{name: "Square", shape: Square{Side: 10}},
+		{name: "Circle", shape: Circle{Radius: 10}},
+	}
+
+	for _, ee := range perimeterExamples {
+		fmt.Println(ee.shape.Perimeter())
+	}
 	// Output:
-	// 100.0
-	// 314.1592653589793
+	// 40
+	// 62.83185307179586
 }

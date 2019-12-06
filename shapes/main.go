@@ -5,9 +5,12 @@ import (
 	"math"
 )
 
+// Square Shape
 type Square struct {
 	Side float64
 }
+
+//Circle Shape
 type Circle struct {
 	Radius float64
 }
@@ -18,18 +21,22 @@ type Shape interface {
 	Perimeter() float64
 }
 
+// Area - Method to calculate the Area of Shape Square
 func (s Square) Area() float64 {
 	return s.Side * s.Side
 }
 
+// Area - Method to calculate the Area of Shape Circle
 func (c Circle) Area() float64 {
 	return math.Pi * c.Radius * c.Radius
 }
 
+// Perimeter - Method to calculate the Perimeter of Shape Square
 func (s Square) Perimeter() float64 {
 	return 4 * s.Side
 }
 
+// Perimeter - Method to calculate the Perimeter of Shape Circle
 func (c Circle) Perimeter() float64 {
 	return 2 * math.Pi * c.Radius
 }
