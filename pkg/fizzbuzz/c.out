@@ -1,0 +1,10 @@
+mode: set
+github.com/abhishek-inspopindia/goworkspace/pkg/fizzbuzz/fizzbuzz.go:9.46,12.28 2 1
+github.com/abhishek-inspopindia/goworkspace/pkg/fizzbuzz/fizzbuzz.go:24.2,24.10 1 1
+github.com/abhishek-inspopindia/goworkspace/pkg/fizzbuzz/fizzbuzz.go:12.28,13.25 1 1
+github.com/abhishek-inspopindia/goworkspace/pkg/fizzbuzz/fizzbuzz.go:13.25,15.4 1 1
+github.com/abhishek-inspopindia/goworkspace/pkg/fizzbuzz/fizzbuzz.go:15.9,15.25 1 1
+github.com/abhishek-inspopindia/goworkspace/pkg/fizzbuzz/fizzbuzz.go:15.25,17.4 1 1
+github.com/abhishek-inspopindia/goworkspace/pkg/fizzbuzz/fizzbuzz.go:17.9,17.25 1 1
+github.com/abhishek-inspopindia/goworkspace/pkg/fizzbuzz/fizzbuzz.go:17.25,19.4 1 1
+github.com/abhishek-inspopindia/goworkspace/pkg/fizzbuzz/fizzbuzz.go:19.9,21.4 1 1
