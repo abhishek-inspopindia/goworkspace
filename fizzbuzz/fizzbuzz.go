@@ -6,7 +6,9 @@ import (
 )
 
 // FizzBuzz - generate Key-Value pairs of the Map
-func FizzBuzz(fizz, buzz int, m map[int]string) {
+func FizzBuzz(fizz, buzz int) map[int]string {
+	m := make(map[int]string)
+
 	for i := 1; i <= 100; i++ {
 		if i%(fizz*buzz) == 0 {
 			m[i] = "FizzBuzz"
@@ -18,4 +20,6 @@ func FizzBuzz(fizz, buzz int, m map[int]string) {
 			m[i] = strconv.Itoa(i)
 		}
 	}
+
+	return m
 }
