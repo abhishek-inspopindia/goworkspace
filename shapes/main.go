@@ -2,41 +2,42 @@
 package shapes
 
 import (
-	"fmt"
 	"math"
 )
 
 type Square struct {
-	side float64
+	Side float64
 }
 type Circle struct {
-	radius float64
+	Radius float64
 }
+
+// Shape defines an interface having methods for Area() and Circumference()
 type Shape interface {
-	area() float64
-	circumference() float64
+	Area() float64
+	Perimeter() float64
 }
 
-func (s Square) area() float64 {
-	return s.side * s.side
+func (s Square) Area() float64 {
+	return s.Side * s.Side
 }
 
-func (c Circle) area() float64 {
-	return math.Pi * c.radius * c.radius
+func (c Circle) Area() float64 {
+	return math.Pi * c.Radius * c.Radius
 }
 
-func (s Square) circumference() float64 {
-	return 4 * s.side
+func (s Square) Perimeter() float64 {
+	return 4 * s.Side
 }
 
-func (c Circle) circumference() float64 {
-	return 2 * math.Pi * c.radius
+func (c Circle) Perimeter() float64 {
+	return 2 * math.Pi * c.Radius
 }
 
-func main() {
-	s := Square{10}
-	c := Circle{10}
+// func main() {
+// 	s := Square{10}
+// 	c := Circle{10}
 
-	fmt.Printf("Type(s) = %T\tSide(s) = %v\tArea(s) = %v\tCircumference(s) = %v\n", s, s.side, s.area(), s.circumference())
-	fmt.Printf("Type(c) = %T\tRadius(c) = %v\tArea(c) = %v\tCircumference(c) = %v\n", c, c.radius, c.area(), c.circumference())
-}
+// 	fmt.Printf("Type(s) = %T\tSide(s) = %v\tArea(s) = %v\tPerimeter(s) = %v\n", s, s.Side, s.Area(), s.Perimeter())
+// 	fmt.Printf("Type(c) = %T\tRadius(c) = %v\tArea(c) = %v\tPerimeter(c) = %v\n", c, c.Radius, c.Area(), c.Perimeter())
+// }
